@@ -17,6 +17,7 @@ public class Student {
         this.countryOptions.put("FR", "France");
         this.countryOptions.put("DE", "Germany");
         this.countryOptions.put("US", "United States of America");
+        this.countryOptions.put("CZE", "Czech Republic");
 
         this.favouriteLanguageOptions = new LinkedHashMap<>();
         this.favouriteLanguageOptions.put("Java", "Java");
@@ -24,6 +25,7 @@ public class Student {
         this.favouriteLanguageOptions.put("Ruby", "Ruby");
         this.favouriteLanguageOptions.put("C++", "C++");
         this.favouriteLanguageOptions.put("PHP", "PHP");
+        this.favouriteLanguageOptions.put("R", "R");
     }
 
     public String getFirstName() {
