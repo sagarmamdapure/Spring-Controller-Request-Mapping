@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
@@ -18,5 +19,13 @@ Country: ${student.country}
 
 <br><br>
 Favourite Language: ${student.favouriteLanguage}
+
+<br><br>
+Operating Systems:
+<ul>
+    <c:forEach var="temp" items="${student.operatingSystems}">
+        <li>${temp}</li>
+    </c:forEach>
+</ul>
 </body>
 </html>
